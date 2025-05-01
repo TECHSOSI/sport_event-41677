@@ -4,13 +4,13 @@
   <%# 画面上部の「人生を変えるフリマアプリ」帯部分 %>
   <div class='title-contents'>
     <h2 class='service-title'>
-      人生を変えるフリマアプリ
+      野球人生を豊かにするアプリ
     </h2>
     <p class='service-explain'>
-      FURIMAはだれでもかんたんに出品・購入できる
+      SPORTS_EVENTは簡単に試合が組める
     </p>
     <p class='service-explain'>
-      フリマアプリです
+      野球ファン交流アプリです
     </p>
     <div class='store-btn'>
       <%= link_to image_tag("app-store.svg", class:"apple-btn"), "#" %>
@@ -22,7 +22,7 @@
   <%# FURIMAが選ばれる3つの理由部分 %>
   <div class='select-reason-contents'>
     <h2 class='title'>
-      FURIMAが選ばれる3つの理由
+      SPORTS_EVENTが選ばれる3つの理由
     </h2>
     <ul class='reason-lists'>
       <li class='list'>
@@ -30,32 +30,32 @@
         <span class='reason-list-number'>1</span>
         <h3 class='reason-list-text'>
           <span class='reason-list-blue-text'>3分</span>
-          ですぐに出品
+          ですぐに試合募集
         </h3>
         <p class='reason-list-description'>
-          スマホで入力するだけで簡単に出品できる！
+          試合がしたい時に簡単に募集できる！
         </p>
       </li>
       <li class='list'>
         <%= image_tag "furima-intro02.png", class:"list-pict" %>
         <span class='reason-list-number'>2</span>
         <h3 class='reason-list-text'>
-          <span class='reason-list-blue-text'>シンプル</span>
-          で使いやすい
+          <span class='reason-list-blue-text'>試合相手</span>
+          が見つかればすぐに試合成立
         </h3>
         <p class='reason-list-description'>
-          めんどくさい入力は必要なく、検索も購入もスムーズ！
+          めんどうなやり取り無し！
         </p>
       </li>
       <li class='list'>
         <%= image_tag "furima-intro03.png", class:"list-pict" %>
         <span class='reason-list-number'>3</span>
         <h3 class='reason-list-text'>
-          手数料
-          <span class='reason-list-blue-text'>業界最安</span>
+          公認審判
+          <span class='reason-list-blue-text'>手配可能</span>
         </h3>
         <p class='reason-list-description'>
-          10%でお得に出品&購入！
+          後は試合を楽しむだけ！
         </p>
       </li>
     </ul>
@@ -65,16 +65,16 @@
   <%# 画面中央の「会員数日本一位」帯部分 %>
   <div class='ad-contents'>
     <h2 class='ad-title'>
-      会員数日本一位
+      草野球会員数日本一位
     </h2>
     <p class='ad-explain'>
-      FURIMAは、フリマアプリで最も人気。
+      SPORTS_EVENTは、野球ファン内で最も人気なアプリ。
     </p>
     <p class='ad-explain'>
-      出品・購入回数も業界最多です！
+      グランド代、審判代はWEB決済可能!
     </p>
     <p class='ad-explain'>
-      ほしかったあの商品に出会えるかもしれません。
+      自分たちに合った対戦相手がきっと見つかる。
     </p>
     <div class='store-btn'>
       <%= link_to image_tag("app-store.svg", class:"apple-btn"), "#" %>
@@ -86,34 +86,34 @@
   <%# FURIMAの特徴 %>
   <div class='feature-contents'>
     <h2 class='title'>
-      FURIMAの特徴
+      SPORTS_EVENTの特徴
     </h2>
     <ul class='feature-lists'>
       <li class='list'>
         <%= image_tag "furima-intro04.png", class:"list-pict" %>
         <h3 class='feature-list-text'>
-          簡単に売り買いできる
+          イベントは野球だけに限らない!
         </h3>
         <p class='feature-list-description'>
-          スマホひとつで、いつでもどこでも簡単に出品・購入が可能！
+          対戦相手の情報が確認できる！
         </p>
       </li>
       <li class='list'>
         <%= image_tag "furima-intro05.png", class:"list-pict" %>
         <h3 class='feature-list-text'>
-          売上金は即日振込みに対応
+          ミスマッチが起こらない
         </h3>
         <p class='feature-list-description'>
-          午前9時までに振込を依頼いただければ、翌日に指定の口座に入金いたします。
+          事前に対戦相手の情報が確認できるためミスマッチが起こらない！
         </p>
       </li>
       <li class='list'>
         <%= image_tag "furima-intro06.png", class:"list-pict" %>
         <h3 class='feature-list-text'>
-          様々な支払いに対応
+          チームとチームが繋がりコミュニティが広い
         </h3>
         <p class='feature-list-description'>
-          お支払いは、クレジットカードだけでなく、ポイントや売上金など多彩な方法があります。
+          対戦相手の履歴が残るため次の試合が組みやすい。
         </p>
       </li>
     </ul>
@@ -183,7 +183,7 @@
   <%# /商品一覧 %>
 </div>
 <%= link_to('#', class: 'purchase-btn') do %>
-  <span class='purchase-btn-text'>出品する</span>
+  <span class='purchase-btn-text'>試合募集する</span>
   <%= image_tag 'icon_camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
 <% end %>
 <%= render "shared/footer" %>
