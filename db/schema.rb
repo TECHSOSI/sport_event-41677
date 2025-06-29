@@ -10,7 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_04_27_035212) do
+ActiveRecord::Schema[7.1].define(version: 2025_06_29_093053) do
+  create_table "items", charset: "utf8mb3", force: :cascade do |t|
+    t.date "date", null: false
+    t.integer "event_time_id", null: false
+    t.integer "stadium_id", null: false
+    t.string "home_name", null: false
+    t.string "manager", null: false
+    t.integer "home_level_id", null: false
+    t.text "home_URL", null: false
+    t.integer "umpire_id", null: false
+    t.integer "fee", null: false
+    t.integer "progress_id", null: false
+    t.text "home_message", null: false
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_items_on_user_id"
+  end
+
   create_table "users", charset: "utf8mb3", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -29,4 +47,5 @@ ActiveRecord::Schema[7.1].define(version: 2025_04_27_035212) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "items", "users"
 end
